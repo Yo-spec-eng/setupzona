@@ -14,6 +14,7 @@ export type ArticleMeta = {
   updated?: string;
   keywords: string[];
   image?: string;
+  cover?: string; // imagen de portada (foto real); si falta, se usa un placeholder de marca
   featured?: boolean;
   readingMinutes: number;
 };
@@ -38,6 +39,7 @@ function parseFile(category: string, fileName: string): Article {
     updated: data.updated ?? undefined,
     keywords: data.keywords ?? [],
     image: data.image ?? undefined,
+    cover: data.cover ?? undefined,
     featured: data.featured ?? false,
     readingMinutes: Math.max(1, Math.round(readingTime(content).minutes)),
     content,

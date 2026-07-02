@@ -6,6 +6,7 @@ import { buildMetadata, articleJsonLd } from '@/lib/seo';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { Mdx } from '@/components/mdx';
+import { Cover } from '@/components/Cover';
 
 export const dynamicParams = false;
 
@@ -53,6 +54,13 @@ export default async function ArticlePage({
       />
 
       <header className="mb-8">
+        <Cover
+          category={article.category}
+          title={article.title}
+          cover={article.cover}
+          priority
+          className="mb-6"
+        />
         <h1 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
           {article.title}
         </h1>
