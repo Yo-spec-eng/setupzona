@@ -4,6 +4,7 @@ import Script from 'next/script';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CookieConsent } from '@/components/CookieConsent';
 import { SITE } from '@/lib/site';
 
 const inter = Inter({
@@ -42,6 +43,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsent />
 
         {/* Google AdSense: descomenta cuando tengas tu cuenta aprobada. */}
         {/* <Script

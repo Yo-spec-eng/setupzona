@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { CATEGORIES } from '@/lib/site';
 import { getFeaturedArticles } from '@/lib/articles';
 import { ArticleCard } from '@/components/ArticleCard';
@@ -31,6 +32,18 @@ export default function HomePage() {
           >
             Guías para empezar
           </Link>
+        </div>
+
+        {/* Imagen destacada */}
+        <div className="relative mx-auto mt-12 aspect-[16/9] max-w-4xl overflow-hidden rounded-2xl shadow-lg">
+          <Image
+            src="/images/covers/mejores-escritorios-elevables.png"
+            alt="Setup de escritorio moderno y ordenado"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 900px"
+            className="object-cover"
+          />
         </div>
       </section>
 
