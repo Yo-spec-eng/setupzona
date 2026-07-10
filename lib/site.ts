@@ -10,7 +10,7 @@ export const SITE = {
   // Tu tag de afiliado de Amazon (formato: tucodigo-21 en España).
   amazonTag: 'setupzona-21',
   // Tu ID de cliente de AdSense (formato: ca-pub-XXXXXXXXXXXXXXXX).
-  adsenseClient: 'ca-pub-0000000000000000',
+  adsenseClient: 'ca-pub-9906131780078463',
 };
 
 export type Category = {

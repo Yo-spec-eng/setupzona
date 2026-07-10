@@ -45,13 +45,13 @@ export default function RootLayout({
         <Footer />
         <CookieConsent />
 
-        {/* Google AdSense: descomenta cuando tengas tu cuenta aprobada. */}
-        {/* <Script
+        {/* Google AdSense: carga el loader para verificación y anuncios automáticos. */}
+        <Script
           async
           strategy="afterInteractive"
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsenseClient}`}
           crossOrigin="anonymous"
-        /> */}
+        />
       </body>
     </html>
   );
