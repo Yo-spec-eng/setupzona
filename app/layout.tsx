@@ -22,6 +22,8 @@ export const metadata: Metadata = {
   description: SITE.description,
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
+  // Verificación de Google AdSense (etiqueta meta estática, la ve cualquier rastreador).
+  other: { 'google-adsense-account': SITE.adsenseClient },
 };
 
 export default function RootLayout({
